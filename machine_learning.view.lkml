@@ -56,7 +56,7 @@ view: transactions_regression {
     sql_create:
       CREATE OR REPLACE MODEL ${SQL_TABLE_NAME}
       OPTIONS(model_type='logistic_reg'
---        , labels=['will_purchase']
+--        , input_label_cols=['will_purchase']
 --      , eval_split_method='no_split'
         ) AS
       SELECT
